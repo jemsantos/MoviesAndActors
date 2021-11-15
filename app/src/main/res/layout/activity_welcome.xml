@@ -5,28 +5,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="@color/background"
     tools:context=".ui.activities.WelcomeActivity">
 
-    <!-- ImageView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:scaleType="centerCrop"
-    android:src="@drawable/background" / -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="170dp"
+        android:layout_height="184dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="174dp"
-        android:layout_marginRight="56dp"
-        android:fontFamily="@font/opensans_extrabold"
-        android:text="@string/welcome_title"
-        android:textColor="@color/white"
-        android:textSize="34sp" />
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/robotomedium"
+        android:text="@string/welcome_subtitle"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp" />
 
-    <TextView
+    <!-- TextView
         android:id="@+id/subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,15 +38,15 @@
         android:fontFamily="@font/opensans_regular"
         android:text="@string/welcome_subtitle"
         android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:textSize="16sp" / -->
 
     <Button
         android:id="@+id/signup"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:layout_below="@id/subtitle"
+        android:layout_below="@id/title"
         android:layout_marginHorizontal="56dp"
-        android:layout_marginTop="87dp"
+        android:layout_marginTop="113dp"
         android:background="@drawable/button_gradient"
         android:fontFamily="@font/opensans_bold"
         android:text="@string/welcome_signup"
@@ -59,11 +61,11 @@
         android:layout_below="@id/signup"
         android:layout_marginHorizontal="56dp"
         android:layout_marginTop="26dp"
-        android:background="@drawable/button_white"
+        android:background="@drawable/button_gradient"
         android:fontFamily="@font/opensans_bold"
         android:text="@string/welcome_login"
         android:textAllCaps="false"
-        android:textColor="@color/black2"
+        android:textColor="@color/white"
         android:textSize="16sp" />
 
 </RelativeLayout>

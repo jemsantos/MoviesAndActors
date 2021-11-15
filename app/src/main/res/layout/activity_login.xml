@@ -5,26 +5,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="@color/background"
     tools:context=".ui.activities.LoginActivity">
 
-    <!-- ImageView
-         android:layout_width="match_parent"
-         android:layout_height="match_parent"
-         android:scaleType="centerCrop"
-         android:src="@drawable/background" / -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="170dp"
+        android:layout_height="184dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="174dp"
-        android:layout_marginRight="56dp"
-        android:fontFamily="@font/opensans_extrabold"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/robotomedium"
         android:text="@string/login_title"
-        android:textColor="@color/white"
-        android:textSize="34sp" />
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layoutEmail"
@@ -42,7 +44,7 @@
             android:layout_height="40dp"
             android:hint="@string/login_email"
             android:inputType="textEmailAddress"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textColorHint="@color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -63,7 +65,7 @@
             android:layout_height="40dp"
             android:hint="@string/login_password"
             android:inputType="textPassword"
-            android:textColorHint="@color/white" />
+            android:textColorHint="@color/black" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -75,10 +77,23 @@
         android:layout_marginHorizontal="56dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/button_gradient"
-        android:fontFamily="@font/opensans_bold"
+        android:fontFamily="@font/robotoregular"
         android:text="@string/login_signin"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:textSize="15sp" />
 
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/login"
+        android:layout_marginHorizontal="56dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_gradient"
+        android:fontFamily="@font/robotoregular"
+        android:text="@string/register_createaccount"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
 </RelativeLayout>

@@ -12,4 +12,11 @@
     <color name="black2">#0d0e15</color>
     <color name="gradient1">#1f2e70</color>
     <color name="gradient2">#002774</color>
+
+    <color name="colorPrimaryDark">#554e8f</color>
+
+    <color name="background">#f9fcff</color>
+
+    <color name="redDark">#8B0000</color>
+    <color name="redLight">#FF0000</color>
 </resources>

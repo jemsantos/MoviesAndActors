@@ -15,4 +15,7 @@ interface ServiceAccount {
 
     @PUT("account")
     fun update(@Body account: Account): Call<Account>
+
+    @POST("account/forgot")
+    fun forgot(@Body acount: Account): Call<Void>
 }

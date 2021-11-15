@@ -2,6 +2,8 @@
     <string name="app_name">MoviesAndActors</string>
 
     <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
 
     <string name="welcome_title">Seja Bem-vindo</string>
     <string name="welcome_subtitle">Seja bem-vindo ao app Filmes e Atores</string>
@@ -11,12 +13,13 @@
     <string name="login_email">E-mail</string>
     <string name="login_password">Senha</string>
     <string name="login_signin">Entrar</string>
-    <string name="main_welcomemessage">Bem-vindo %s</string>
     <string name="login_title">Login</string>
+    <string name="login_save">Salvar</string>
+
+    <string name="main_welcomemessage">Bem-vindo %s</string>
+
     <string name="register_createaccount">Crie sua conta</string>
     <string name="register_nome">Nome</string>
     <string name="register_createaccountbutton">Criar conta</string>
-    <string name="title_activity_login">LoginActivity</string>
-
-    <string name="title_activity_register">RegisterActivity</string>
+    <string name="splash_url">www.cotemig.com.br</string>
 </resources>

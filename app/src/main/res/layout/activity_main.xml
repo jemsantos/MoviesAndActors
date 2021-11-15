@@ -7,14 +7,60 @@
     android:layout_height="match_parent"
     tools:context=".ui.activities.MainActivity">
 
-    <TextView
+    <!-- TextView
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
         android:fontFamily="@font/opensans_bold"
         android:text="@string/main_welcomemessage"
         android:textColor="@color/black"
-        android:textSize="30sp" />
+        android:textSize="30sp" / -->
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="170dp"
+        android:layout_height="184dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/buttonMovies"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/logo"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_gradient"
+        android:fontFamily="@font/robotoregular"
+        android:text="Filmes"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/buttonSeries"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/buttonMovies"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_gradient"
+        android:fontFamily="@font/robotoregular"
+        android:text="Series"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/buttonAtores"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/button_gradient"
+        android:layout_below="@id/buttonSeries"
+        android:layout_marginTop="10dp"
+        android:text="Atores"
+        android:textColor="@color/white"
+        android:fontFamily="@font/robotoregular" />
 </RelativeLayout>
