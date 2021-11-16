@@ -41,18 +41,15 @@ class SeriesActivity : AppCompatActivity() {
             override fun onResponse(call: Call<ListSeries>?, response: Response<ListSeries>?) {
 
                 Toast.makeText(this@SeriesActivity, "ok", Toast.LENGTH_LONG).show()
-/*                response?.let{
-                    if(it.code()==200)
-                    {
+                /* response?.let{
+                    if (it.code() == 200) {
                         listaseries.adapter =
                             it.body()?.let { it1 ->
-                                SeriesAdapter(this@SeriesActivity,
-                                    it1.results)
+                                SeriesAdapter(this@SeriesActivity, it1.results)
                             }
                     }
                 } */
             }
         })
-
     }
 }

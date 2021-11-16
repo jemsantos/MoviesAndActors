@@ -42,16 +42,13 @@ class MoviesActivity : AppCompatActivity() {
                 Toast.makeText(this@MoviesActivity, "ok", Toast.LENGTH_LONG).show()
                 /* response?.let{
                     if (it.code() == 200) {
-                        it.adapter =
+                        listamovies.adapter =
                             it.body()?.let { it2 ->
-                                MoviesAdapter(this@MoviesActivity,
-                                    it2.resultsMovie)
+                                MoviesAdapter(this@MoviesActivity, it2.results)
                             }
-
                     }
                 } */
             }
         })
-
     }
 }

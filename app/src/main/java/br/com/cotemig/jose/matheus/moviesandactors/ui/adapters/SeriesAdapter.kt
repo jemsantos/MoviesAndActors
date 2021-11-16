@@ -18,14 +18,11 @@ class SeriesAdapter (var context: Context, var list: List<Serie>) : BaseAdapter(
 
         var view = LayoutInflater.from(context).inflate(R.layout.item_series, parent,false)
 
-
         var name_serie = view.findViewById<TextView>(R.id.name_serie)
         name_serie.text = list[position].name
 
         var foto = view.findViewById<ImageView>(R.id.image_serie)
         Glide.with(view).load("https://image.tmdb.org/t/p/w500".plus(list[position].backdrop_path)).into(foto)
-
-
 
         return view
     }

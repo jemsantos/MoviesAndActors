@@ -4,5 +4,5 @@
         android:endColor="@color/redDark"
         android:startColor="@color/redLight" />
 
-    <corners android:radius="6dp" />
+    <corners android:radius="8dp" />
 </shape>

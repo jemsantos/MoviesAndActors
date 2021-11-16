@@ -38,7 +38,6 @@ class LoginActivity : AppCompatActivity() {
         var email = findViewById<TextInputEditText>(R.id.email)
         var password = findViewById<TextInputEditText>(R.id.password)
 
-
         var account = Account()
 
         account.email = email.text.toString()
@@ -59,14 +58,14 @@ class LoginActivity : AppCompatActivity() {
                 } else {
                     Toast.makeText(
                         this@LoginActivity,
-                        "Usuário ou senha inválidos",
+                        "Usuário e/ou senha inválidos",
                         Toast.LENGTH_LONG
                     ).show()
                 }
             }
 
             override fun onFailure(call: Call<Account>, t: Throwable) {
-                Toast.makeText(this@LoginActivity, "Ops!!!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@LoginActivity, "Opssss!!!", Toast.LENGTH_LONG).show()
             }
         })
     }

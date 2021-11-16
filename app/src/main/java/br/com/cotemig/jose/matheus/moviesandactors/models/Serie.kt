@@ -7,5 +7,4 @@ class Serie {
 
     var backdrop_path: String = ""
     var poster_path: String = ""
-
 }

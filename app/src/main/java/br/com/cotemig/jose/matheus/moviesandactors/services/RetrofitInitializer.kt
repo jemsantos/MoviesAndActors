@@ -47,6 +47,3 @@ class RetrofitInitializer {
         return retrofit2.create(ServiceMovies::class.java)
     }
 }
-
-
-//private val URL = "https://api.themoviedb.org/3/"

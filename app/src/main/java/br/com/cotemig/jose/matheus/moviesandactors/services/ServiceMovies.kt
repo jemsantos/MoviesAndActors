@@ -8,5 +8,4 @@ import retrofit2.http.Query
 interface ServiceMovies {
     @GET("movie/popular")
     fun getmovies(@Query("api_key")api_key:String) : Call<ListMovies>
-
 }

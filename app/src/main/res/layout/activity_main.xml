@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.activities.MainActivity">
-
+<!-- ok -->
     <!-- TextView
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
         android:layout_marginTop="50dp"
         android:background="@drawable/button_gradient"
         android:fontFamily="@font/robotoregular"
-        android:text="Filmes"
+        android:text="@string/lbl_buttonMovies"
         android:textColor="@color/white"
         android:textSize="15sp" />
 
@@ -48,7 +48,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/button_gradient"
         android:fontFamily="@font/robotoregular"
-        android:text="Series"
+        android:text="@string/lbl_buttonSeries"
         android:textColor="@color/white"
         android:textSize="15sp" />
 
@@ -60,7 +60,7 @@
         android:background="@drawable/button_gradient"
         android:layout_below="@id/buttonSeries"
         android:layout_marginTop="10dp"
-        android:text="Atores"
+        android:text="@string/lbl_buttonAtores"
         android:textColor="@color/white"
         android:fontFamily="@font/robotoregular" />
 </RelativeLayout>

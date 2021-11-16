@@ -42,7 +42,7 @@ class RegisterActivity : AppCompatActivity() {
         call.enqueue(object : Callback<Account> {
             override fun onResponse(call: Call<Account>?, response: Response<Account>?) {
                 response?.let {
-                    if(it.code()==200) {
+                    if(it.code() == 200) {
                         Toast.makeText(this@RegisterActivity,"Cadastro realizado", Toast.LENGTH_LONG).show()
                     } else {
                         Toast.makeText(this@RegisterActivity,"Todos os campos devem ser preenchidos", Toast.LENGTH_LONG).show()

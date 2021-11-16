@@ -5,5 +5,4 @@ class Movie {
     var title: String = ""
 
     var backdrop_path: String = ""
-
 }
