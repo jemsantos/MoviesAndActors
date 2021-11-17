@@ -21,10 +21,13 @@
     <string name="register_createaccount">Crie sua conta</string>
     <string name="register_nome">Nome</string>
     <string name="register_createaccountbutton">Criar conta</string>
+
     <string name="splash_url">www.cotemig.com.br</string>
+
     <string name="lbl_buttonMovies">Filmes</string>
     <string name="lbl_buttonSeries">Series</string>
     <string name="lbl_buttonAtores">Atores</string>
+
     <string name="item_movie_name">Nome do Filme</string>
     <string name="item_serie_name">Nome da Serie</string>
 </resources>

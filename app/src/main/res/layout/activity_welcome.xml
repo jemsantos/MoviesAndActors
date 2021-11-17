@@ -52,7 +52,7 @@
         android:text="@string/welcome_signup"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/login"
@@ -66,6 +66,6 @@
         android:text="@string/welcome_login"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:textSize="15sp" />
 
 </RelativeLayout>

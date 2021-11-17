@@ -11,7 +11,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:fillViewport="true" >
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -44,10 +44,10 @@
                 android:layout_below="@id/title"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="20dp"
-                android:contentDescription="@string/login_email"
+                android:contentDescription="@string/register_nome"
                 android:fontFamily="@font/robotoregular"
                 android:hint="@string/register_nome"
-                android:inputType="textEmailAddress"
+                android:inputType="textPersonName"
                 android:textSize="15sp" />
 
             <EditText
@@ -70,7 +70,7 @@
                 android:layout_below="@id/email"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="20dp"
-                android:contentDescription="@string/login_email"
+                android:contentDescription="@string/login_password"
                 android:fontFamily="@font/robotoregular"
                 android:hint="@string/login_password"
                 android:inputType="textPassword"
@@ -85,6 +85,7 @@
                 android:layout_marginTop="50dp"
                 android:background="@drawable/button_gradient"
                 android:fontFamily="@font/robotoregular"
+                android:textAllCaps="false"
                 android:text="@string/login_save"
                 android:textColor="@color/white"
                 android:textSize="15sp" />

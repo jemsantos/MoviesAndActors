@@ -17,9 +17,9 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        var login = findViewById<Button>(R.id.login)
-        login.setOnClickListener {
-            loginClick()
+        var buttonLogin = findViewById<Button>(R.id.buttonLogin)
+        buttonLogin.setOnClickListener {
+            login()
         }
 
         var buttonSignUp = findViewById<Button>(R.id.buttonSignUp)
@@ -34,7 +34,7 @@ class LoginActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun loginClick() {
+    fun login() {
         var email = findViewById<TextInputEditText>(R.id.email)
         var password = findViewById<TextInputEditText>(R.id.password)
 
@@ -65,7 +65,7 @@ class LoginActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<Account>, t: Throwable) {
-                Toast.makeText(this@LoginActivity, "Opssss!!!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@LoginActivity, "Ooopssss!!!", Toast.LENGTH_LONG).show()
             }
         })
     }
