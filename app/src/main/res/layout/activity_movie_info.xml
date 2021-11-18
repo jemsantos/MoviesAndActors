@@ -15,10 +15,7 @@
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/logo">
-
-    </ImageView>
-
+        android:src="@drawable/logo" />
 
     <TextView
         android:id="@+id/name_movieinfo"
@@ -30,7 +27,7 @@
         android:textAlignment="center"
         android:textColor="@color/redLight"
         android:textSize="34dp"
-        android:background="#A8000000"/>
+        android:background="#A8000000" />
 
     <TextView
         android:id="@+id/description"
@@ -43,7 +40,5 @@
         android:text="bla bla bla"
         android:textColor="@color/white"
         android:textSize="18sp" />
-
-
 
 </RelativeLayout>
