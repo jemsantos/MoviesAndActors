@@ -30,4 +30,6 @@
 
     <string name="item_movie_name">Nome do Filme</string>
     <string name="item_serie_name">Nome da Serie</string>
+
+    <string name="list_movies_data">Data</string>
 </resources>

@@ -67,4 +67,5 @@
         android:text="@string/lbl_buttonAtores"
         android:textColor="@color/white"
         android:textSize="15sp" />
+
 </RelativeLayout>

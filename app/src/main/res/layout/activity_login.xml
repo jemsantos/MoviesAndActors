@@ -65,6 +65,7 @@
             android:layout_height="40dp"
             android:hint="@string/login_password"
             android:inputType="textPassword"
+            android:textColor="@color/black"
             android:textColorHint="@color/black" />
 
     </com.google.android.material.textfield.TextInputLayout>

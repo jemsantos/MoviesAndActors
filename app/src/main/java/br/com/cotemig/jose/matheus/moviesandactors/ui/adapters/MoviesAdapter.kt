@@ -7,34 +7,65 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
+import androidx.recyclerview.widget.RecyclerView
 import br.com.cotemig.jose.matheus.moviesandactors.R
 import br.com.cotemig.jose.matheus.moviesandactors.models.Movie
+import coil.ImageLoader
+import coil.decode.SvgDecoder
+import coil.request.ImageRequest
 import com.bumptech.glide.Glide
 
-class MoviesAdapter(var context: Context, var list: List<Movie>) : BaseAdapter() {
+class MoviesAdapter(var context: Context, var list: List<Movie>, var onClickMovie: (Movie) -> Unit) :
+        RecyclerView.Adapter<MoviesAdapter.MoviesHolder>() {
 
-    override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
-        var view = LayoutInflater.from(context).inflate(R.layout.item_movies,p2,false)
-
-        var name_movie = view.findViewById<TextView>(R.id.name_movie)
-        name_movie.text = list[p0].title
-
-        var foto = view.findViewById<ImageView>(R.id.image_movie)
-        Glide.with(view).load("https://image.tmdb.org/t/p/w500".plus(list[p0].backdrop_path)).into(foto)
-
-        return view
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MoviesHolder {
+        // carregando o xml na memÃ³ria
+        var view = LayoutInflater.from(context).inflate(R.layout.item_movies, parent, false)
+        // retornando objeto holder instanciado, passando view no construtor
+        return MoviesHolder(view)
     }
 
-    override fun getCount(): Int {
+    override fun onBindViewHolder(holder: MoviesHolder, position: Int) {
+        holder.bind(list[position], onClickMovie)
+    }
+
+    override fun getItemCount(): Int {
         return list.size
     }
 
-    override fun getItem(p0: Int): Any {
-        return ""
-    }
+    class MoviesHolder(var view: View) : RecyclerView.ViewHolder(view) {
 
-    override fun getItemId(p0: Int): Long {
-        return 0
-    }
+        fun  bind(movie: Movie, onClickMovie: (Movie) -> Unit){
+            var name_movie = view.findViewById<TextView>(R.id.name_movie)
+            name_movie.text = movie.title
 
+            var nota_movie = view.findViewById<TextView>(R.id.nota_movie)
+            nota_movie.text = movie.vote_average
+
+            var release_date = view.findViewById<TextView>(R.id.data_movie)
+            release_date.text = movie.release_date
+
+            var foto = view.findViewById<ImageView>(R.id.image_movie)
+
+            foto.loadUrl("https://image.tmdb.org/t/p/w500"+movie.poster_path)
+
+            var card_movies = view.findViewById<CardView>(R.id.card_movies)
+            card_movies.setOnClickListener{
+                onClickMovie(movie)
+            }
+        }
+
+        fun ImageView.loadUrl(url: String) {
+            val imageLoader = ImageLoader.Builder(context)
+                    .componentRegistry {
+                        add(SvgDecoder(context))
+                    }
+                    .build()
+            val request = ImageRequest.Builder(context).data(url)
+                    .target(this)
+                    .build()
+            imageLoader.enqueue(request)
+        }
+    }
 }

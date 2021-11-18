@@ -46,4 +46,8 @@ class RetrofitInitializer {
     fun serviceMovies(): ServiceMovies {
         return retrofit2.create(ServiceMovies::class.java)
     }
+
+    fun serviceAtores(): ServiceAtores {
+        return retrofit2.create(ServiceAtores::class.java)
+    }
 }

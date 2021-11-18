@@ -52,10 +52,10 @@ class MainActivity : AppCompatActivity() {
             telaMovies()
         }
 
-        /* var buttonAtores = findViewById<Button>(R.id.buttonAtores)
+        var buttonAtores = findViewById<Button>(R.id.buttonAtores)
         buttonAtores.setOnClickListener {
             telaAtores()
-        } */
+        }
     }
 
     fun telaMovies() {
@@ -65,6 +65,11 @@ class MainActivity : AppCompatActivity() {
 
     fun telaSeries() {
         var intent = Intent(this, SeriesActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun telaAtores(){
+        var intent = Intent(this, AtoresActivity::class.java)
         startActivity(intent)
     }
 }

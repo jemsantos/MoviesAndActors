@@ -1,5 +1,6 @@
 package br.com.cotemig.jose.matheus.moviesandactors.models
 
-data class ListMovies (
-    var results: List<Movie>
+data class ListAtores (
+
+    var results: List<Atores>
 )

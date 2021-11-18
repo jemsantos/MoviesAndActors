@@ -15,7 +15,8 @@
             android:id="@+id/image_serie"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo"
+            android:scaleType="centerCrop" />
 
         <TextView
             android:id="@+id/name_serie"
