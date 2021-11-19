@@ -7,6 +7,7 @@ import br.com.cotemig.jose.matheus.moviesandactors.R
 import br.com.cotemig.jose.matheus.moviesandactors.models.ListSeries
 import br.com.cotemig.jose.matheus.moviesandactors.services.RetrofitInitializer
 import br.com.cotemig.jose.matheus.moviesandactors.ui.adapters.SeriesAdapter
+import kotlinx.android.synthetic.main.activity_series.*
 
 import retrofit2.Call
 import retrofit2.Response
@@ -43,10 +44,10 @@ class SeriesActivity : AppCompatActivity() {
                 Toast.makeText(this@SeriesActivity, "ok", Toast.LENGTH_LONG).show()
                 response?.let{
                     if (it.code() == 200) {
-                        /*listaseries.adapter =
+                        listaseries.adapter =
                             it.body()?.let { it1 ->
                                 SeriesAdapter(this@SeriesActivity, it1.results)
-                            } */
+                            }
                     }
                 }
             }

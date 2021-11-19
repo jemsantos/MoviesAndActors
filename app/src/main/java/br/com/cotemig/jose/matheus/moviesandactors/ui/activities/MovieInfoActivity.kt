@@ -9,6 +9,7 @@ import com.bumptech.glide.Glide
 import retrofit2.Call
 import retrofit2.Response
 import android.widget.*
+import kotlinx.android.synthetic.main.activity_movie_info.*
 
 
 class MovieInfoActivity : AppCompatActivity() {
@@ -29,12 +30,12 @@ class MovieInfoActivity : AppCompatActivity() {
                 response?.let{
                     if (it.code() == 200) {
 
-                        /*name_movieinfo.text = it.body()!!.original_title
+                        name_movieinfo.text = it.body()!!.original_title
                         description.text = it.body()!!.overview
 
                         Glide.with(this@MovieInfoActivity)
                             .load("https://image.tmdb.org/t/p/w500".plus(it.body()!!.poster_path))
-                            .into(image_movieinfo) */
+                            .into(image_movieinfo)
                     }
                 }
             }

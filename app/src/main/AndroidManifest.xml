@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.cotemig.jose.matheus.moviesandactors">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MoviesAndActors">
+
+        <activity
+            android:name=".ui.activities.AtorMovieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.AtoresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.MovieInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.MovieCastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.MoviesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.SeriesActivity"
+            android:exported="false" />
+
         <activity android:name=".ui.activities.PersonPopularActivity"></activity>
         <activity android:name=".ui.activities.WelcomeActivity" />
         <activity android:name=".ui.activities.SplashActivity">
@@ -23,6 +45,5 @@
         <activity android:name=".ui.activities.MainActivity" />
     </application>
 
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

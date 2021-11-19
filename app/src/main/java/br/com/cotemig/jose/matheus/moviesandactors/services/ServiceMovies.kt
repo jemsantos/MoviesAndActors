@@ -13,8 +13,10 @@ interface ServiceMovies {
     fun getmovies(@Query("api_key")api_key:String) : Call<ListMovies>
 
     @GET("movie/{id}")
-    fun getmoviesinfo(@Path("id") id: Int, @Query("api_key")api_key:String) : Call<MovieInfo>
+    fun getmoviesinfo(@Path("id") id: Int,
+                      @Query("api_key")api_key:String) : Call<MovieInfo>
 
     @GET("movie/{id}/credits")
-    fun getcast(@Path("id") id: Int, @Query("api_key")api_key:String) : Call<ListCast>
+    fun getcast(@Path("id") id: Int,
+                @Query("api_key")api_key:String) : Call<ListCast>
 }
