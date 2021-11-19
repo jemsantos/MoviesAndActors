@@ -68,4 +68,18 @@
         android:textColor="@color/white"
         android:textSize="15sp" />
 
+    <Button
+        android:id="@+id/buttonAtoresPopulares"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/buttonAtores"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_gradient"
+        android:fontFamily="@font/robotoregular"
+        android:textAllCaps="false"
+        android:text="@string/lbl_buttonAtoresPopulares"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
 </RelativeLayout>

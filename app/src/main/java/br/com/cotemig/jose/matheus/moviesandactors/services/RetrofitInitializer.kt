@@ -8,6 +8,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 class RetrofitInitializer {
+
+    /* servico de autenticação */
     private val URL = "https://api.fluo.work/v1/"
 
     companion object {
@@ -30,8 +32,10 @@ class RetrofitInitializer {
     fun serviceAccount(): ServiceAccount {
         return retrofit.create(ServiceAccount::class.java)
     }
+    /* FIM - servico de autenticação */
 
-    //Caminho da API
+
+    /* Caminho da API */
     private val retrofit2 = Retrofit.Builder()
             .client(okHttpClient)
             .baseUrl("https://api.themoviedb.org/3/")
@@ -50,4 +54,9 @@ class RetrofitInitializer {
     fun serviceAtores(): ServiceAtores {
         return retrofit2.create(ServiceAtores::class.java)
     }
+
+    fun servicePersonPopular(): ServicePersonPopular {
+        return retrofit2.create(ServicePersonPopular::class.java)
+    }
+    /* FIM - Caminho da API */
 }

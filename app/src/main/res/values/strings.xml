@@ -32,4 +32,5 @@
     <string name="item_serie_name">Nome da Serie</string>
 
     <string name="list_movies_data">Data</string>
+    <string name="lbl_buttonAtoresPopulares">Atores Populares</string>
 </resources>

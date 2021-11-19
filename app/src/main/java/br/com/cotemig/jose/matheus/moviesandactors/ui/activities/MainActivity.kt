@@ -56,6 +56,11 @@ class MainActivity : AppCompatActivity() {
         buttonAtores.setOnClickListener {
             telaAtores()
         }
+
+        var buttonAtoresPopulares = findViewById<Button>(R.id.buttonAtoresPopulares)
+        buttonAtoresPopulares.setOnClickListener {
+            telaAtoresPopulares()
+        }
     }
 
     fun telaMovies() {
@@ -68,8 +73,14 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun telaAtores(){
+    fun telaAtores() {
         var intent = Intent(this, AtoresActivity::class.java)
         startActivity(intent)
     }
+
+    fun telaAtoresPopulares() {
+        var intent = Intent(this, PersonPopularActivity::class.java)
+        startActivity(intent)
+    }
+
 }
