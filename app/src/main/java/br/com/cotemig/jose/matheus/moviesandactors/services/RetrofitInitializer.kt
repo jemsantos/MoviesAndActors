@@ -58,5 +58,9 @@ class RetrofitInitializer {
     fun servicePersonPopular(): ServicePersonPopular {
         return retrofit2.create(ServicePersonPopular::class.java)
     }
+
+    fun serviceProviderStreaming(): ServiceProviderStreaming {
+        return retrofit2.create(ServiceProviderStreaming::class.java)
+    }
     /* FIM - Caminho da API */
 }

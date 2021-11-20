@@ -53,7 +53,7 @@ class PersonPopularActivity : AppCompatActivity() {
 
             // listar os filmes em que o ator participou....
             // var intent = Intent(this, null) // tela dos times dentro do campeonato
-            // intent.putExtra("id", ator.id)
+            // intent.putExtra("knownFor", ator.known_for)
             // startActivity(intent)
         }
 

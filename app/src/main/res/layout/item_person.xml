@@ -19,15 +19,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
             <TextView
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_below="@id/profile"
                 android:fontFamily="@font/robotomedium"
-                android:textSize="16sp"
-                android:text="Silvester Stalone" />
+                android:textSize="18sp"
+                android:text="Silvester Stalone"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/knownForDepartment"
@@ -35,11 +44,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/name"
                 android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
                 android:fontFamily="@font/robotoregular"
                 android:textSize="14sp"
-                android:text="Action" />
+                android:text="Action"
+                android:gravity="center" />
 
         </RelativeLayout>
 

@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MoviesAndActors">
-
+        <activity android:name=".ui.activities.ProviderStreamingActivity"></activity>
         <activity
             android:name=".ui.activities.AtorMovieActivity"
             android:exported="false" />
@@ -30,8 +30,7 @@
         <activity
             android:name=".ui.activities.SeriesActivity"
             android:exported="false" />
-
-        <activity android:name=".ui.activities.PersonPopularActivity"></activity>
+        <activity android:name=".ui.activities.PersonPopularActivity" />
         <activity android:name=".ui.activities.WelcomeActivity" />
         <activity android:name=".ui.activities.SplashActivity">
             <intent-filter>
@@ -44,6 +43,5 @@
         <activity android:name=".ui.activities.LoginActivity" />
         <activity android:name=".ui.activities.MainActivity" />
     </application>
-
 
 </manifest>

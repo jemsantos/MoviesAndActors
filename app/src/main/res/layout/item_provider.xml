@@ -5,16 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/background"
-    tools:context=".ui.activities.LoginActivity">
+    android:background="@color/background">
+
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card_atores"
+        android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         app:cardCornerRadius="8dp"
-        app:cardElevation="9dp"
+        app:cardElevation="6dp"
         app:cardPreventCornerOverlap="true">
 
         <LinearLayout
@@ -22,20 +22,20 @@
             android:layout_height="100dp">
 
             <ImageView
-                android:id="@+id/image_ator"
+                android:id="@+id/logo"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/logo"
                 android:scaleType="centerCrop" />
 
             <TextView
-                android:id="@+id/name_ator"
+                android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/robotomedium"
                 android:layout_margin="10dp"
-                android:text="Nome do Ator"
-                android:textSize="22sp" />
+                android:textSize="22sp"
+                android:text="Silvester Stalone" />
 
         </LinearLayout>
 
