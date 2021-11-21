@@ -25,7 +25,6 @@ class AtoresActivity : AppCompatActivity() {
     }
 
     fun getAtores(){
-
         // inicializando o retrofit
         var r = RetrofitInitializer().serviceAtores()
 
@@ -56,23 +55,18 @@ class AtoresActivity : AppCompatActivity() {
                 }
             }
         })
-
     }
-    fun showAtores(list: List<Atores>){
 
+    fun showAtores(list: List<Atores>){
         var atores = findViewById<RecyclerView>(R.id.listaatores)
 
         atores.adapter = AtoresAdapter(this,list){ ator ->
-
             var intent = Intent(this, AtorMovieActivity::class.java)
             intent.putExtra("id", ator.id)
             startActivity(intent)
-
         }
 
-
         atores.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-
-
     }
+
 }

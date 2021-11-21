@@ -33,4 +33,7 @@
 
     <string name="list_movies_data">Data</string>
     <string name="lbl_buttonAtoresPopulares">Atores Populares</string>
+    <string name="provedores_streaming_title">Provedores de Streaming</string>
+    <string name="regioes_disponiveis_title">Regiões Disponiveis</string>
+    <string name="lbl_regioes_disponiveis">Regiões Disponíveis</string>
 </resources>

@@ -6,12 +6,9 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import br.com.cotemig.jose.matheus.moviesandactors.R
-import br.com.cotemig.jose.matheus.moviesandactors.models.Atores
-import br.com.cotemig.jose.matheus.moviesandactors.models.Person
 import br.com.cotemig.jose.matheus.moviesandactors.models.ProviderStreaming
 import br.com.cotemig.jose.matheus.moviesandactors.models.Watch
 import br.com.cotemig.jose.matheus.moviesandactors.services.RetrofitInitializer
-import br.com.cotemig.jose.matheus.moviesandactors.ui.adapters.ActorAdapter
 import br.com.cotemig.jose.matheus.moviesandactors.ui.adapters.ProviderStreamingAdapter
 import retrofit2.Call
 import retrofit2.Response
@@ -27,12 +24,11 @@ class ProviderStreamingActivity : AppCompatActivity() {
     fun getProviderStreaming() {
 
         val s= RetrofitInitializer().serviceProviderStreaming()
-        var call = s.getProviderStreaming("ec0d4e364d9d4899a085d61c47e589d3")
+        var call = s.getProvidersStreaming("ec0d4e364d9d4899a085d61c47e589d3")
 
         call.enqueue(object : retrofit2.Callback<Watch> {
             override fun onResponse(call: Call<Watch>, response: Response<Watch>) {
                 if (response.code() == 200) {
-
                     response.body()?.let { watch ->
                         watch.results?.let { list ->
                             showProviders(list)

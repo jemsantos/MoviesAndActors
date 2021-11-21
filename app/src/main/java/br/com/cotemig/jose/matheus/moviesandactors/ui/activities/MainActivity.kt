@@ -17,7 +17,7 @@ import br.com.cotemig.jose.matheus.moviesandactors.models.Account
 Get Movie Providers
 GET
 /watch/providers/movie
-https://api.themoviedb.org/3/watch/providers/movie?api_key=<<api_key>>&language=en-US
+https://api.themoviedb.org/3/watch/providers/movie?api_key=<<api_key>>&language=en-US&watch_region=BR
 {
     "results": [
     {
@@ -52,6 +52,7 @@ https://api.themoviedb.org/3/watch/providers/regions?api_key=<<api_key>>&languag
   ]
 }
 */
+
 
 /*
 Get Top Rated
@@ -106,6 +107,11 @@ class MainActivity : AppCompatActivity() {
         buttonProvedoresStreaming.setOnClickListener {
             telaProvedoresStreaming()
         }
+
+        var buttonRegioesDisponiveis = findViewById<Button>(R.id.buttonRegioesDisponiveis)
+        buttonRegioesDisponiveis.setOnClickListener {
+            telaRegioesDisponiveis()
+        }
     }
 
     fun telaMovies() {
@@ -130,6 +136,11 @@ class MainActivity : AppCompatActivity() {
 
     fun telaProvedoresStreaming() {
         var intent = Intent(this, ProviderStreamingActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun telaRegioesDisponiveis() {
+        var intent = Intent(this, AvailableRegionActivity::class.java)
         startActivity(intent)
     }
 

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.activities.MainActivity">
-<!-- ok -->
+
     <!-- TextView
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
@@ -93,6 +93,20 @@
         android:fontFamily="@font/robotoregular"
         android:textAllCaps="false"
         android:text="Provedores de Streaming"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/buttonRegioesDisponiveis"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/buttonProvedoresStreaming"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_gradient"
+        android:fontFamily="@font/robotoregular"
+        android:textAllCaps="false"
+        android:text="@string/lbl_regioes_disponiveis"
         android:textColor="@color/white"
         android:textSize="15sp" />
 

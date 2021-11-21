@@ -6,5 +6,5 @@ import retrofit2.http.*
 
 interface ServiceSeries {
     @GET("tv/popular")
-    fun getseries(@Query("api_key")api_key:String) : Call<ListSeries>
+    fun getseries(@Query("api_key") api_key: String) : Call<ListSeries>
 }

@@ -62,5 +62,9 @@ class RetrofitInitializer {
     fun serviceProviderStreaming(): ServiceProviderStreaming {
         return retrofit2.create(ServiceProviderStreaming::class.java)
     }
+
+    fun serviceAvailableRegion(): ServiceRegion {
+        return retrofit2.create(ServiceRegion::class.java)
+    }
     /* FIM - Caminho da API */
 }

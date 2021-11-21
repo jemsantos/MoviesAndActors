@@ -6,5 +6,4 @@ class Cast {
 
     var character: String = ""
     var profile_path: String = ""
-
 }

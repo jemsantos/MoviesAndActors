@@ -24,7 +24,7 @@ class AtorMovieActivity : AppCompatActivity() {
         getMoviesAtor(id)
     }
 
-    fun getMoviesAtor(id:Int){
+    fun getMoviesAtor(id:Int) {
 
         // inicializando o retrofit
         var r = RetrofitInitializer().serviceAtores()
@@ -60,20 +60,15 @@ class AtorMovieActivity : AppCompatActivity() {
     }
 
     fun showMoviesAtores(list: List<Movie>){
-
         var movies = findViewById<RecyclerView>(R.id.listamoviesator)
 
-        movies.adapter = MoviesAdapter(this,list){ movie ->
-
+        movies.adapter = MoviesAdapter(this,list) { movie ->
             var intent = Intent(this, MovieInfoActivity::class.java)
             intent.putExtra("id", movie.id)
             startActivity(intent)
-
         }
 
-
         movies.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-
-
     }
+
 }
