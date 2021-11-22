@@ -5,10 +5,7 @@
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_register">RegisterActivity</string>
 
-    <string name="welcome_title">Seja Bem-vindo</string>
-    <string name="welcome_subtitle">Seja bem-vindo ao app Filmes e Atores</string>
-    <string name="welcome_signup">Cadastre-se</string>
-    <string name="welcome_login">Login</string>
+    <string name="splash_url">www.cotemig.com.br</string>
 
     <string name="login_email">E-mail</string>
     <string name="login_password">Senha</string>
@@ -16,24 +13,29 @@
     <string name="login_title">Login</string>
     <string name="login_save">Salvar</string>
 
+    <string name="welcome_title">Seja Bem-vindo</string>
+    <string name="welcome_subtitle">Seja bem-vindo ao app Filmes e Atores</string>
+    <string name="welcome_signup">Cadastre-se</string>
+    <string name="welcome_login">Login</string>
+
     <string name="main_welcomemessage">Bem-vindo %s</string>
 
     <string name="register_createaccount">Crie sua conta</string>
     <string name="register_nome">Nome</string>
     <string name="register_createaccountbutton">Criar conta</string>
 
-    <string name="splash_url">www.cotemig.com.br</string>
-
     <string name="lbl_buttonMovies">Filmes</string>
     <string name="lbl_buttonSeries">Series</string>
     <string name="lbl_buttonAtores">Atores</string>
+    <string name="lbl_buttonAtoresPopulares">Atores Populares</string>
+    <string name="lbl_regioes_disponiveis">Regiões Disponíveis</string>
+
+    <string name="list_movies_data">Data</string>
 
     <string name="item_movie_name">Nome do Filme</string>
     <string name="item_serie_name">Nome da Serie</string>
 
-    <string name="list_movies_data">Data</string>
-    <string name="lbl_buttonAtoresPopulares">Atores Populares</string>
     <string name="provedores_streaming_title">Provedores de Streaming</string>
+
     <string name="regioes_disponiveis_title">Regiões Disponiveis</string>
-    <string name="lbl_regioes_disponiveis">Regiões Disponíveis</string>
 </resources>
