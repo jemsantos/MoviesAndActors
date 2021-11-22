@@ -18,13 +18,22 @@ class ProviderStreamingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_provider_streaming)
 
-        getProviderStreaming()
+        var watchRegion = "BR"
+        val bundle :Bundle ?=intent.extras
+        if (bundle!=null){
+            watchRegion = intent.getStringExtra("watch_region").toString()
+        }
+
+        getProviderStreaming(watchRegion)
     }
 
-    fun getProviderStreaming() {
+    fun getProviderStreaming(watchRegion: String) {
 
-        val s= RetrofitInitializer().serviceProviderStreaming()
-        var call = s.getProvidersStreaming("ec0d4e364d9d4899a085d61c47e589d3")
+        val s = RetrofitInitializer().serviceProviderStreaming()
+
+        Toast.makeText(this@ProviderStreamingActivity, watchRegion, Toast.LENGTH_LONG).show()
+
+        var call = s.getProvidersStreamingByRegion(watchRegion, "ec0d4e364d9d4899a085d61c47e589d3")
 
         call.enqueue(object : retrofit2.Callback<Watch> {
             override fun onResponse(call: Call<Watch>, response: Response<Watch>) {
@@ -55,4 +64,5 @@ class ProviderStreamingActivity : AppCompatActivity() {
 
         providers.layoutManager = LinearLayoutManager (this, LinearLayoutManager.VERTICAL, false)
     }
+
 }

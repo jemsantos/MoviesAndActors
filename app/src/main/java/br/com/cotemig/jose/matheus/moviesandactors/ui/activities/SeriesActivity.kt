@@ -40,7 +40,6 @@ class SeriesActivity : AppCompatActivity() {
 
             //sucesso  requisição
             override fun onResponse(call: Call<ListSeries>?, response: Response<ListSeries>?) {
-
                 Toast.makeText(this@SeriesActivity, "ok", Toast.LENGTH_LONG).show()
                 response?.let{
                     if (it.code() == 200) {

@@ -42,7 +42,6 @@ class MoviesActivity : AppCompatActivity() {
 
             //sucesso  requisição
             override fun onResponse(call: Call<ListMovies>?, response: Response<ListMovies>?) {
-
                 Toast.makeText(this@MoviesActivity, "ok", Toast.LENGTH_LONG).show()
                 response?.let{
                     if (it.code() == 200) {

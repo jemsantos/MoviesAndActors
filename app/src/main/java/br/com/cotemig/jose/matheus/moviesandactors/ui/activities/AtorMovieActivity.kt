@@ -24,7 +24,7 @@ class AtorMovieActivity : AppCompatActivity() {
         getMoviesAtor(id)
     }
 
-    fun getMoviesAtor(id:Int) {
+    fun getMoviesAtor(id: Int) {
 
         // inicializando o retrofit
         var r = RetrofitInitializer().serviceAtores()

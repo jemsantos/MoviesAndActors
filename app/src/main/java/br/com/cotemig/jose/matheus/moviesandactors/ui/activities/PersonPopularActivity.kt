@@ -25,7 +25,6 @@ class PersonPopularActivity : AppCompatActivity() {
     }
 
     fun getPersonPopular() {
-
         val s= RetrofitInitializer().servicePersonPopular()
         var call = s.getPersonPopular("ec0d4e364d9d4899a085d61c47e589d3")
 

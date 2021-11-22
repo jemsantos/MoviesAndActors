@@ -1,5 +1,6 @@
 package br.com.cotemig.jose.matheus.moviesandactors.ui.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -22,8 +23,7 @@ class AvailableRegionActivity : AppCompatActivity() {
     }
 
     fun getAvailableRegions() {
-
-        val s= RetrofitInitializer().serviceAvailableRegion()
+        val s = RetrofitInitializer().serviceAvailableRegion()
         var call = s.getRegions("ec0d4e364d9d4899a085d61c47e589d3")
 
         call.enqueue(object : retrofit2.Callback<AvailableRegions> {
@@ -46,11 +46,10 @@ class AvailableRegionActivity : AppCompatActivity() {
     fun showRegions(list: List<Region>) {
         var regions = findViewById<RecyclerView>(R.id.regions)
         regions.adapter = RegionAdapter(this, list) { region ->
-
-            // listar os filmes em que o ator participou....
-            // var intent = Intent(this, null) // tela dos times dentro do campeonato
-            // intent.putExtra("knownFor", ator.known_for)
-            // startActivity(intent)
+            // listar os provedores presente em um região
+            var intent = Intent(this, ProviderStreamingActivity::class.java) // tela dos provedores
+            intent.putExtra("watch_region", region.iso_3166_1) // codigo da regiao clicada
+            startActivity(intent)
         }
 
         regions.layoutManager = LinearLayoutManager (this, LinearLayoutManager.VERTICAL, false)

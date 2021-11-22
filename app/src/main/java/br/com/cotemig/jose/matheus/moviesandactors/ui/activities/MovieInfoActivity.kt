@@ -11,7 +11,6 @@ import retrofit2.Response
 import android.widget.*
 import kotlinx.android.synthetic.main.activity_movie_info.*
 
-
 class MovieInfoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +28,6 @@ class MovieInfoActivity : AppCompatActivity() {
             override fun onResponse(call: Call<MovieInfo>, response: Response<MovieInfo>) {
                 response?.let{
                     if (it.code() == 200) {
-
                         name_movieinfo.text = it.body()!!.original_title
                         description.text = it.body()!!.overview
 

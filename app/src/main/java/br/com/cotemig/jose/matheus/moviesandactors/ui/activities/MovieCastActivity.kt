@@ -14,12 +14,10 @@ import br.com.cotemig.jose.matheus.moviesandactors.ui.adapters.CastAdapter
 import retrofit2.Call
 import retrofit2.Response
 
-
 class MovieCastActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cast)
-
 
         var id = intent.getIntExtra("id", 0)
 
@@ -58,19 +56,14 @@ class MovieCastActivity : AppCompatActivity() {
                 }
             }
         })
-
     }
 
     fun showCast(list: List<Cast>){
-
         var cast = findViewById<RecyclerView>(R.id.listacast)
 
         cast.adapter = CastAdapter(this,list)
 
-
         cast.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-
-
     }
 
 }
