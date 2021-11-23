@@ -40,33 +40,38 @@ class LoginActivity : AppCompatActivity() {
 
         var account = Account()
 
-        account.email = email.text.toString()
-        account.password = password.text.toString()
 
-        val s = RetrofitInitializer().serviceAccount()
-        val call = s.auth(account)
+        if (email.text.toString().isEmpty() or password.text.toString().isEmpty()) {
+            Toast.makeText(this@LoginActivity,"Os campos Usuário e senha são obrigatórios", Toast.LENGTH_LONG).show()
+        } else {
+            account.email = email.text.toString()
+            account.password = password.text.toString()
 
-        call.enqueue(object : retrofit2.Callback<Account> {
-            override fun onResponse(call: Call<Account>, response: Response<Account>) {
-                if (response.code() == 200) {
-                    response.body()?.let {
-                        var intent = Intent(this@LoginActivity, MainActivity::class.java)
-                        intent.putExtra("account", it)
-                        startActivity(intent)
-                        finish()
+            val s = RetrofitInitializer().serviceAccount()
+            val call = s.auth(account)
+
+            call.enqueue(object : retrofit2.Callback<Account> {
+                override fun onResponse(call: Call<Account>, response: Response<Account>) {
+                    if (response.code() == 200) {
+                        response.body()?.let {
+                            var intent = Intent(this@LoginActivity, MainActivity::class.java)
+                            intent.putExtra("account", it)
+                            startActivity(intent)
+                            finish()
+                        }
+                    } else {
+                        Toast.makeText(
+                                this@LoginActivity,
+                                "Usuário e/ou senha inválidos",
+                                Toast.LENGTH_LONG
+                        ).show()
                     }
-                } else {
-                    Toast.makeText(
-                        this@LoginActivity,
-                        "Usuário e/ou senha inválidos",
-                        Toast.LENGTH_LONG
-                    ).show()
                 }
-            }
 
-            override fun onFailure(call: Call<Account>, t: Throwable) {
-                Toast.makeText(this@LoginActivity, "Ooopssss!!!", Toast.LENGTH_LONG).show()
-            }
-        })
+                override fun onFailure(call: Call<Account>, t: Throwable) {
+                    Toast.makeText(this@LoginActivity, "Ooopssss!!!", Toast.LENGTH_LONG).show()
+                }
+            })
+        }
     }
 }
