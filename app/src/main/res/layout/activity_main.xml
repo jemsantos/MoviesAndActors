@@ -110,4 +110,18 @@
         android:textColor="@color/white"
         android:textSize="15sp" />
 
+    <Button
+        android:id="@+id/buttonGenerosOficiais"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/buttonRegioesDisponiveis"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_gradient"
+        android:fontFamily="@font/robotoregular"
+        android:textAllCaps="false"
+        android:text="@string/lbl_generos_oficiais"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
 </RelativeLayout>

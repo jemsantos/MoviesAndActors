@@ -38,4 +38,7 @@
     <string name="provedores_streaming_title">Provedores de Streaming</string>
 
     <string name="regioes_disponiveis_title">Regiões Disponiveis</string>
+
+    <string name="generos_filmes_title">Gêneros de Filmes</string>
+    <string name="lbl_generos_oficiais">Gêneros Oficiais</string>
 </resources>

@@ -46,7 +46,6 @@ class RetrofitInitializer {
         return retrofit2.create(ServiceSeries::class.java)
     }
 
-
     fun serviceMovies(): ServiceMovies {
         return retrofit2.create(ServiceMovies::class.java)
     }
@@ -65,6 +64,10 @@ class RetrofitInitializer {
 
     fun serviceAvailableRegion(): ServiceRegion {
         return retrofit2.create(ServiceRegion::class.java)
+    }
+
+    fun serviceOfficialGenres(): ServiceGenres {
+        return retrofit2.create(ServiceGenres::class.java)
     }
     /* FIM - Caminho da API */
 }

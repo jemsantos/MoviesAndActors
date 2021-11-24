@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MoviesAndActors">
-        <activity android:name=".ui.activities.AvailableRegionActivity"/>
+        <activity android:name=".ui.activities.OfficialGenresActivity"></activity>
+        <activity android:name=".ui.activities.AvailableRegionActivity" />
         <activity android:name=".ui.activities.ProviderStreamingActivity" />
         <activity
             android:name=".ui.activities.AtorMovieActivity"
