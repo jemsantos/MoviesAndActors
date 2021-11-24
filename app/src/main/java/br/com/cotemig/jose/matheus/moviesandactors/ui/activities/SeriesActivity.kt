@@ -1,11 +1,17 @@
 package br.com.cotemig.jose.matheus.moviesandactors.ui.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import br.com.cotemig.jose.matheus.moviesandactors.R
 import br.com.cotemig.jose.matheus.moviesandactors.models.ListSeries
+import br.com.cotemig.jose.matheus.moviesandactors.models.Movie
+import br.com.cotemig.jose.matheus.moviesandactors.models.Serie
 import br.com.cotemig.jose.matheus.moviesandactors.services.RetrofitInitializer
+import br.com.cotemig.jose.matheus.moviesandactors.ui.adapters.MoviesAdapter
 import br.com.cotemig.jose.matheus.moviesandactors.ui.adapters.SeriesAdapter
 import kotlinx.android.synthetic.main.activity_series.*
 
@@ -25,9 +31,6 @@ class SeriesActivity : AppCompatActivity() {
         // inicializando o retrofit
         var s = RetrofitInitializer().serviceSeries()
 
-        // criando o objeto "chamador" dos metodos
-        //var call = s.getseries("/500?","ec0d4e364d9d4899a085d61c47e589d3")
-
         var call = s.getseries("ec0d4e364d9d4899a085d61c47e589d3")
 
         //chamada assincrona
@@ -43,13 +46,26 @@ class SeriesActivity : AppCompatActivity() {
                 Toast.makeText(this@SeriesActivity, "ok", Toast.LENGTH_LONG).show()
                 response?.let{
                     if (it.code() == 200) {
-                        listaseries.adapter =
-                            it.body()?.let { it1 ->
-                                SeriesAdapter(this@SeriesActivity, it1.results)
+                        it.body()?.let { it2 ->
+                            it2.results?.let{ list ->
+                                showSeries(list)
                             }
+                        }
                     }
                 }
             }
         })
+    }
+
+    fun showSeries(list: List<Serie>) {
+        var series = findViewById<RecyclerView>(R.id.listaseries)
+
+        series.adapter = SeriesAdapter(this, list) { serie ->
+            var intent = Intent(this, SeasonActivity::class.java)
+            intent.putExtra("id", serie.id)
+            startActivity(intent)
+        }
+
+        series.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
     }
 }

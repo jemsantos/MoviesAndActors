@@ -46,6 +46,10 @@ class MoviesAdapter(var context: Context, var list: List<Movie>, var onClickMovi
             var release_date = view.findViewById<TextView>(R.id.data_movie)
             release_date.text = movie.release_date
 
+            var overview = view.findViewById<TextView>(R.id.overview)
+            overview.text = movie.overview
+
+
             var foto = view.findViewById<ImageView>(R.id.image_movie)
 
             foto.loadUrl("https://image.tmdb.org/t/p/w500"+movie.poster_path)

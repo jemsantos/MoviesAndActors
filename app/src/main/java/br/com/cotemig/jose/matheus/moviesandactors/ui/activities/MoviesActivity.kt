@@ -27,9 +27,6 @@ class MoviesActivity : AppCompatActivity() {
         // inicializando o retrofit
         var r = RetrofitInitializer().serviceMovies()
 
-        // criando o objeto "chamador" dos metodos
-        //var call = s.getseries("/500?","ec0d4e364d9d4899a085d61c47e589d3")
-
         var call = r.getmovies("ec0d4e364d9d4899a085d61c47e589d3")
 
         //chamada assincrona
@@ -64,6 +61,8 @@ class MoviesActivity : AppCompatActivity() {
             intent.putExtra("id", movie.id)
             startActivity(intent)
         }
+
+        //MovieCastActivity
 
         movies.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
     }

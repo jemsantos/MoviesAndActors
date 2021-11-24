@@ -8,10 +8,10 @@
     tools:context=".ui.activities.SeriesActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/listaseries"
+        android:id="@+id/listaepisodes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        tools:listitem="@layout/item_series" />
+        tools:listitem="@layout/item_episode" />
 
 </RelativeLayout>

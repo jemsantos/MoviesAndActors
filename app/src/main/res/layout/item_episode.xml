@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/background"
-    tools:context=".ui.activities.LoginActivity" >
+    tools:context=".ui.activities.LoginActivity">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card_movies"
+        android:id="@+id/card_episode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -22,7 +21,7 @@
             android:layout_height="160dp" >
 
             <ImageView
-                android:id="@+id/image_movie"
+                android:id="@+id/image_episode"
                 android:layout_width="100dp"
                 android:layout_height="160dp"
                 android:src="@drawable/logo"
@@ -33,7 +32,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/name_movie"
+                    android:id="@+id/name_episode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -41,23 +40,23 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="3dp"
                     android:fontFamily="@font/robotomedium"
-                    android:text="@string/item_movie_name"
+                    android:text="Episode"
                     android:textColor="@color/redLight"
                     android:textSize="21sp" />
 
                 <TextView
-                    android:id="@+id/nota_movie"
+                    android:id="@+id/episode_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
                     android:fontFamily="@font/robotomedium"
-                    android:text="Nota"
+                    android:text="episodios"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentRight="true"
                     android:layout_margin="10dp" />
 
                 <TextView
-                    android:id="@+id/data_movie"
+                    android:id="@+id/air_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -67,24 +66,23 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:fontFamily="@font/robotomedium"
-                    android:text="@string/list_movies_data"
+                    android:text="Data"
                     android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/overview"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
-                    android:layout_below="@id/name_movie"
+                    android:layout_below="@id/name_episode"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/robotomedium"
                     android:text="overview"
                     android:textSize="15sp" />
 
             </RelativeLayout>
-
         </LinearLayout>
-
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

@@ -5,13 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.SeriesActivity">
+    tools:context=".ui.activities.SeasonActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/listaseries"
+        android:id="@+id/listaseasons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        tools:listitem="@layout/item_series" />
+        tools:listitem="@layout/item_season" />
 
 </RelativeLayout>

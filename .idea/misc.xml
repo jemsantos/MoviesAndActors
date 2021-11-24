@@ -3,6 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/activity_cast.xml" value="0.278125" />
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/activity_episode.xml" value="0.2640625" />
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/activity_login.xml" value="0.278125" />
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/activity_main.xml" value="0.278125" />
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/activity_movie_info.xml" value="0.278125" />
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/activity_movies.xml" value="0.2171875" />
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/activity_season.xml" value="0.278125" />
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/activity_series.xml" value="0.2171875" />
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/item_atores.xml" value="0.278125" />
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/item_cast.xml" value="0.278125" />
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/item_episode.xml" value="0.278125" />
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/item_movies.xml" value="0.5" />
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/item_person.xml" value="0.278125" />
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/item_provider.xml" value="0.278125" />
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/item_region.xml" value="0.2171875" />
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/item_season.xml" value="0.33" />
+        <entry key="..\:/Users/mbent/AndroidStudioProjects/Projetos GIT/MoviesAndActors/app/src/main/res/layout/item_series.xml" value="0.5" />
         <entry key="..\:/Users/mbent/Videos/MoviesAndActors-main_2/MoviesAndActors-main/app/src/main/res/layout/activity_ator_movie.xml" value="0.278125" />
         <entry key="..\:/Users/mbent/Videos/MoviesAndActors-main_2/MoviesAndActors-main/app/src/main/res/layout/activity_atores.xml" value="0.278125" />
         <entry key="..\:/Users/mbent/Videos/MoviesAndActors-main_2/MoviesAndActors-main/app/src/main/res/layout/activity_cast.xml" value="0.278125" />
