@@ -47,6 +47,11 @@ class MainActivity : AppCompatActivity() {
         buttonRegioesDisponiveis.setOnClickListener {
             telaRegioesDisponiveis()
         }
+
+        var buttonGenerosOficiais = findViewById<Button>(R.id.buttonGenerosOficiais)
+        buttonGenerosOficiais.setOnClickListener {
+            telaGenerosOficiais()
+        }
     }
 
     fun telaMovies() {
@@ -76,6 +81,11 @@ class MainActivity : AppCompatActivity() {
 
     fun telaRegioesDisponiveis() {
         var intent = Intent(this, AvailableRegionActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun telaGenerosOficiais() {
+        var intent = Intent(this, OfficialGenresActivity::class.java)
         startActivity(intent)
     }
 
