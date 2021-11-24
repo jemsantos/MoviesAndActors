@@ -19,7 +19,6 @@
         <activity
             android:name=".ui.activities.SeasonActivity"
             android:exported="false" />
-        <activity android:name=".ui.activities.AvailableRegionActivity" />
         <activity android:name=".ui.activities.ProviderStreamingActivity" />
         <activity
             android:name=".ui.activities.AtorMovieActivity"
