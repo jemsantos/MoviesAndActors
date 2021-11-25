@@ -22,7 +22,6 @@
                 android:id="@+id/image_cast"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/logo"
                 android:scaleType="centerCrop" />
 
             <LinearLayout
@@ -37,7 +36,6 @@
                     android:textSize="22sp"
                     android:fontFamily="@font/robotomedium"
                     android:textAlignment="center"
-                    android:text="Nome do Ator"
                     android:layout_weight="1" />
 
                 <TextView
@@ -47,7 +45,6 @@
                     android:textSize="22sp"
                     android:fontFamily="@font/robotomedium"
                     android:textAlignment="center"
-                    android:text="Nome do Personagem"
                     android:layout_weight="1" />
 
             </LinearLayout>

@@ -23,6 +23,6 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_below="@id/title"
-        tools:listitem="@layout/item_movies" />
+        tools:listitem="@layout/item_atores" />
 
 </RelativeLayout>
