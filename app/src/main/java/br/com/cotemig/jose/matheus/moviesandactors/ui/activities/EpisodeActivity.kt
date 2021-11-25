@@ -50,7 +50,7 @@ class EpisodeActivity : AppCompatActivity() {
 
                         it.body()?.let { it2 ->
                             it2.episodes?.let{ list ->
-                                showEpisodes(list)
+                                showEpisodes(list, id, season)
                             }
                         }
                     }
@@ -60,12 +60,14 @@ class EpisodeActivity : AppCompatActivity() {
 
     }
 
-    fun showEpisodes(list: List<Episodes>){
+    fun showEpisodes(list: List<Episodes>, id: Int, season: Int){
         var episodes = findViewById<RecyclerView>(R.id.listaepisodes)
 
         episodes.adapter = EpisodesAdapter(this,list) { episode ->
-            var intent = Intent(this, MovieInfoActivity::class.java)
-            intent.putExtra("id", episode.id)
+            var intent = Intent(this, SerieInfoActivity::class.java)
+            intent.putExtra("id", id)
+            intent.putExtra("season", season)
+            intent.putExtra("id_episode", episode.episode_number)
             startActivity(intent)
         }
 

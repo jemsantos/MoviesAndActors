@@ -18,5 +18,10 @@ interface ServiceSeries {
                         @Path("season") season: Int,
                         @Query("api_key") api_key: String) : Call<ListEpisodes>
 
+    @GET("tv/{id}/season/{season}/episode/{id_episode}")
+    fun getserieinfo(@Path("id") id: Int,
+                     @Path("season") season: Int,
+                     @Path("id_episode") id_episode: Int,
+                     @Query("api_key") api_key: String) : Call<SerieInfo>
 
 }

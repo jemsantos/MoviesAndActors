@@ -8,10 +8,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import br.com.cotemig.jose.matheus.moviesandactors.R
 import br.com.cotemig.jose.matheus.moviesandactors.models.ListSeries
-import br.com.cotemig.jose.matheus.moviesandactors.models.Movie
 import br.com.cotemig.jose.matheus.moviesandactors.models.Serie
 import br.com.cotemig.jose.matheus.moviesandactors.services.RetrofitInitializer
-import br.com.cotemig.jose.matheus.moviesandactors.ui.adapters.MoviesAdapter
 import br.com.cotemig.jose.matheus.moviesandactors.ui.adapters.SeriesAdapter
 import kotlinx.android.synthetic.main.activity_series.*
 

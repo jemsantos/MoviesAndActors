@@ -62,4 +62,11 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+
+
+    //pacote utilizado pa interceptar requisições de log
+    implementation 'com.squareup.okhttp3:okhttp:3.5.0'
+    // pacote utilizado para mostrar os dados de requisições no LOGAT
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.5.0'
 }

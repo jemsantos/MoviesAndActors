@@ -17,6 +17,9 @@
             android:name=".ui.activities.EpisodeActivity"
             android:exported="false" />
         <activity
+        android:name=".ui.activities.SerieInfoActivity"
+        android:exported="false" />
+        <activity
             android:name=".ui.activities.SeasonActivity"
             android:exported="false" />
         <activity android:name=".ui.activities.ProviderStreamingActivity" />
