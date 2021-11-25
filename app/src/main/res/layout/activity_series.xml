@@ -7,11 +7,22 @@
     android:layout_height="match_parent"
     tools:context=".ui.activities.SeriesActivity">
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/robotomedium"
+        android:textSize="26sp"
+        android:text="Series" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listaseries"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
+        android:layout_below="@id/title"
         tools:listitem="@layout/item_series" />
 
 </RelativeLayout>

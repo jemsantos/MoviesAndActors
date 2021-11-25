@@ -36,13 +36,13 @@ class SeasonActivity : AppCompatActivity() {
         {
             //falha requisição
             override fun onFailure(call: Call<ListSeasons>?, t: Throwable?) {
-                Toast.makeText(this@SeasonActivity, "OPS", Toast.LENGTH_LONG).show()
+                //Toast.makeText(this@SeasonActivity, "OPS", Toast.LENGTH_LONG).show()
             }
 
             //sucesso  requisição
             override fun onResponse(call: Call<ListSeasons>?, response: Response<ListSeasons>?) {
 
-                Toast.makeText(this@SeasonActivity, "ok", Toast.LENGTH_LONG).show()
+                //Toast.makeText(this@SeasonActivity, "ok", Toast.LENGTH_LONG).show()
                 response?.let{
                     if(it.code()==200)
                     {

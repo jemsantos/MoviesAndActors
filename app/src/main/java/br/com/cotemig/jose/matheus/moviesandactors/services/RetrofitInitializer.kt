@@ -1,7 +1,5 @@
 package br.com.cotemig.jose.matheus.moviesandactors.services
 
-import okhttp3.OkHttpClient
-import okhttp3.logging.HttpLoggingInterceptor
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -11,17 +9,6 @@ class RetrofitInitializer {
 
     /* servico de autenticação */
     private val URL = "https://api.fluo.work/v1/"
-
-    companion object {
-        private val okHttpClient: OkHttpClient by lazy {
-            OkHttpClient.Builder()
-                    .addInterceptor(HttpLoggingInterceptor().also { it -> it.level = HttpLoggingInterceptor.Level.BODY })
-                    .connectTimeout(15, TimeUnit.SECONDS)
-                    .readTimeout(15, TimeUnit.SECONDS)
-                    .writeTimeout(15, TimeUnit.SECONDS)
-                    .build()
-        }
-    }
 
     private val retrofit =
         Retrofit.Builder()
@@ -37,7 +24,6 @@ class RetrofitInitializer {
 
     /* Caminho da API */
     private val retrofit2 = Retrofit.Builder()
-            .client(okHttpClient)
             .baseUrl("https://api.themoviedb.org/3/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()

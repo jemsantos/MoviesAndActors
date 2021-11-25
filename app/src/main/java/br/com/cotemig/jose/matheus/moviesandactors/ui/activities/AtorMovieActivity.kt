@@ -37,13 +37,13 @@ class AtorMovieActivity : AppCompatActivity() {
         {
             //falha requisição
             override fun onFailure(call: Call<ListAtoresMovies>?, t: Throwable?) {
-                Toast.makeText(this@AtorMovieActivity, "OPS", Toast.LENGTH_LONG).show()
+                //Toast.makeText(this@AtorMovieActivity, "OPS", Toast.LENGTH_LONG).show()
             }
 
             //sucesso  requisição
             override fun onResponse(call: Call<ListAtoresMovies>?, response: Response<ListAtoresMovies>?) {
 
-                Toast.makeText(this@AtorMovieActivity, "ok", Toast.LENGTH_LONG).show()
+                //Toast.makeText(this@AtorMovieActivity, "ok", Toast.LENGTH_LONG).show()
                 response?.let{
                     if(it.code()==200)
                     {

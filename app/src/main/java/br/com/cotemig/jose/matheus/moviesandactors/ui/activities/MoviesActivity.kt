@@ -34,12 +34,12 @@ class MoviesActivity : AppCompatActivity() {
         {
             //falha requisição
             override fun onFailure(call: Call<ListMovies>?, t: Throwable?) {
-                Toast.makeText(this@MoviesActivity, "OPS", Toast.LENGTH_LONG).show()
+                //Toast.makeText(this@MoviesActivity, "OPS", Toast.LENGTH_LONG).show()
             }
 
             //sucesso  requisição
             override fun onResponse(call: Call<ListMovies>?, response: Response<ListMovies>?) {
-                Toast.makeText(this@MoviesActivity, "ok", Toast.LENGTH_LONG).show()
+                //Toast.makeText(this@MoviesActivity, "ok", Toast.LENGTH_LONG).show()
                 response?.let{
                     if (it.code() == 200) {
                         it.body()?.let { it2 ->

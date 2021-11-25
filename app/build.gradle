@@ -49,10 +49,6 @@ dependencies {
     // biblioteca de download de imagens (url)
     implementation 'com.github.bumptech.glide:glide:4.4.0'
 
-    // pacote utilizado pa interceptar requisições de log
-    implementation 'com.squareup.okhttp3:okhttp:3.5.0'
-    // pacote utilizado para mostrar os dados de requisições no LOGAT
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.5.0'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.6.0'

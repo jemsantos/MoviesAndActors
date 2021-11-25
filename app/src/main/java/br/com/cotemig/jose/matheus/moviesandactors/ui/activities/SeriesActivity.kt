@@ -38,12 +38,12 @@ class SeriesActivity : AppCompatActivity() {
         {
             //falha requisição
             override fun onFailure(call: Call<ListSeries>?, t: Throwable?) {
-                Toast.makeText(this@SeriesActivity, "OPS", Toast.LENGTH_LONG).show()
+                //Toast.makeText(this@SeriesActivity, "OPS", Toast.LENGTH_LONG).show()
             }
 
             //sucesso  requisição
             override fun onResponse(call: Call<ListSeries>?, response: Response<ListSeries>?) {
-                Toast.makeText(this@SeriesActivity, "ok", Toast.LENGTH_LONG).show()
+                //Toast.makeText(this@SeriesActivity, "ok", Toast.LENGTH_LONG).show()
                 response?.let{
                     if (it.code() == 200) {
                         it.body()?.let { it2 ->

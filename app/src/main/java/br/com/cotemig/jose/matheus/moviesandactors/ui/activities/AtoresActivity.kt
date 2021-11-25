@@ -36,13 +36,13 @@ class AtoresActivity : AppCompatActivity() {
         {
             //falha requisição
             override fun onFailure(call: Call<ListAtores>?, t: Throwable?) {
-                Toast.makeText(this@AtoresActivity, "OPS", Toast.LENGTH_LONG).show()
+                //Toast.makeText(this@AtoresActivity, "OPS", Toast.LENGTH_LONG).show()
             }
 
             //sucesso  requisição
             override fun onResponse(call: Call<ListAtores>?, response: Response<ListAtores>?) {
 
-                Toast.makeText(this@AtoresActivity, "ok", Toast.LENGTH_LONG).show()
+                //Toast.makeText(this@AtoresActivity, "ok", Toast.LENGTH_LONG).show()
                 response?.let{
                     if(it.code()==200)
                     {

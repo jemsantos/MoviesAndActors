@@ -39,7 +39,7 @@ class MovieInfoActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<MovieInfo>, t: Throwable) {
-                Toast.makeText(this@MovieInfoActivity, "Erro Movie Info", Toast.LENGTH_LONG).show()
+                //Toast.makeText(this@MovieInfoActivity, "Erro Movie Info", Toast.LENGTH_LONG).show()
             }
         })
     }
