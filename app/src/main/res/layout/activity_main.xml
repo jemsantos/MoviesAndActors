@@ -92,7 +92,7 @@
         android:background="@drawable/button_gradient"
         android:fontFamily="@font/robotoregular"
         android:textAllCaps="false"
-        android:text="Provedores de Streaming"
+        android:text="@string/lbl_buttonProvedoresStreaming"
         android:textColor="@color/white"
         android:textSize="15sp" />
 
@@ -106,7 +106,7 @@
         android:background="@drawable/button_gradient"
         android:fontFamily="@font/robotoregular"
         android:textAllCaps="false"
-        android:text="@string/lbl_regioes_disponiveis"
+        android:text="@string/lbl_buttonRegioesDisponiveis"
         android:textColor="@color/white"
         android:textSize="15sp" />
 
@@ -120,7 +120,7 @@
         android:background="@drawable/button_gradient"
         android:fontFamily="@font/robotoregular"
         android:textAllCaps="false"
-        android:text="@string/lbl_generos_oficiais"
+        android:text="@string/lbl_buttonGenerosOficiais"
         android:textColor="@color/white"
         android:textSize="15sp" />
 

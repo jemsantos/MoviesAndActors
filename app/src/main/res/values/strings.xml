@@ -28,7 +28,9 @@
     <string name="lbl_buttonSeries">Series</string>
     <string name="lbl_buttonAtores">Atores</string>
     <string name="lbl_buttonAtoresPopulares">Atores Populares</string>
-    <string name="lbl_regioes_disponiveis">Regiões Disponíveis</string>
+    <string name="lbl_buttonRegioesDisponiveis">Regiões Disponíveis</string>
+    <string name="lbl_buttonGenerosOficiais">Gêneros Oficiais</string>
+    <string name="lbl_buttonProvedoresStreaming">Provedores de Streaming</string>
 
     <string name="list_movies_data">Data</string>
 
@@ -36,9 +38,10 @@
     <string name="item_serie_name">Nome da Serie</string>
 
     <string name="provedores_streaming_title">Provedores de Streaming</string>
-
     <string name="regioes_disponiveis_title">Regiões Disponiveis</string>
-
     <string name="generos_filmes_title">Gêneros de Filmes</string>
-    <string name="lbl_generos_oficiais">Gêneros Oficiais</string>
+    <string name="atores_populares_title">Atores Populares</string>
+    <string name="item_atores_nome">Nome do Ator</string>
+    <string name="item_cast_nome_ator">Nome do Ator</string>
+
 </resources>

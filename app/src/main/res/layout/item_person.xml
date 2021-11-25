@@ -35,7 +35,6 @@
                 android:layout_below="@id/profile"
                 android:fontFamily="@font/robotomedium"
                 android:textSize="18sp"
-                android:text="Silvester Stalone"
                 android:gravity="center" />
 
             <TextView
@@ -48,7 +47,6 @@
                 android:layout_marginBottom="12dp"
                 android:fontFamily="@font/robotoregular"
                 android:textSize="14sp"
-                android:text="Action"
                 android:gravity="center" />
 
         </RelativeLayout>

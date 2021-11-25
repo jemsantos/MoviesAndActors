@@ -36,7 +36,7 @@
         android:layout_centerInParent="true"
         android:background="#A8000000"
         android:fontFamily="@font/robotomedium"
-        android:text="bla bla bla"
+        android:text="Descrição"
         android:textColor="@color/white"
         android:textSize="18sp" />
 

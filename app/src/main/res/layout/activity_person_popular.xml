@@ -15,7 +15,7 @@
         android:layout_margin="10dp"
         android:fontFamily="@font/robotomedium"
         android:textSize="26sp"
-        android:text="Atores Populares" />
+        android:text="@string/atores_populares_title" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/actors"

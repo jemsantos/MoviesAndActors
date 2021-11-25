@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/robotomedium"
                 android:layout_margin="10dp"
-                android:text="Nome do Ator"
+                android:text="@string/item_atores_nome"
                 android:textSize="22sp" />
 
         </LinearLayout>

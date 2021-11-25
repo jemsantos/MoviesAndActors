@@ -80,11 +80,11 @@
                     android:fontFamily="@font/robotomedium"
                     android:text="overview"
                     android:textSize="15sp" />
+
             </RelativeLayout>
 
-
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
 
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

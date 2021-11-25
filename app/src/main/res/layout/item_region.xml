@@ -28,7 +28,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/robotomedium"
-                android:text="Argentina"
                 android:textSize="22sp" />
 
             <TextView
@@ -39,7 +38,6 @@
                 android:layout_alignParentBottom="true"
                 android:layout_margin="10dp"
                 android:fontFamily="@font/robotomedium"
-                android:text="Argentina"
                 android:textSize="22sp" />
 
             <TextView
@@ -50,7 +48,6 @@
                 android:layout_alignParentBottom="true"
                 android:layout_margin="10dp"
                 android:fontFamily="@font/robotomedium"
-                android:text="AR"
                 android:textSize="22sp" />
 
         </RelativeLayout>
